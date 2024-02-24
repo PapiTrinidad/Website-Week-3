@@ -1,0 +1,103 @@
+<!-- Create a new website using HTML and Bootstrap. 
+The website must include the following:
+At least 2 pages.
+A Bootstrap navbar, table, and form.
+Bootstrap grid used throughout to format elements
+Elements should stack vertically when the window is small
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="bg-info bg-gradient">
+    <!--Navbar class-->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">At The Moment?</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+  
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Smoke In The Air</a>
+            </li>
+            
+             <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">Meat & Potatoes</a>
+                 <div class="dropdown-menu">
+                    <a class="dropdown-item" href="http://127.0.0.1:5500/Website-Week-3/website2.html">What I Watch</a>
+                    <a class="dropdown-item" href="#">Don't Fall for it</a>
+                </div>
+            </li>
+          
+        </ul>
+    </div>
+</nav>
+
+<hr>
+
+<h1 class="text-center"> What I Watch Currently</h1>
+    <p>I am not one to do much besides believing in God of the Christian bible, my family or some good shows.</p>
+
+ <!--I will put the table here towards the end of the grid system.-->
+    <table class="table table-dark table-striped table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Episodes so far</th>
+            </tr>
+        </thead>
+            <tbody>
+                
+                <tr>
+                    <th scope="row">1</th>
+                    <td>One Piece</td>
+                    <td>1,095</td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Law & Order: SVU</td>
+                    <td>542</td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Solo Leveling</td>
+                    <td>7</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Mashle: Magic And Muscles</td>
+                    <td>S1: 12, S2: 6</td>
+                </tr>
+            </tbody>
+
+
+    </table>
+
+
+<!-- What needs to be done on the first page
+    1. I will add a navbar here with dropdowns and dynamic tabs that hold no real info except for the first tab *DONE*
+    2. What I am currently watching, which is really only anime and svu.
+    3. The second page will have the form (aka the questionaire for sign up) 
+    4. Not sure yet.....-->
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+   <!--Elements should stack vertically when the window is small--> 
+
+
+
+</body>
+</html>

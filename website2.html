@@ -1,0 +1,108 @@
+<!-- Create a new website using HTML and Bootstrap. 
+The website must include the following:
+At least 2 pages.
+A Bootstrap navbar, table, and form.
+Bootstrap grid used throughout to format elements
+Elements should stack vertically when the window is small
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="bg-info bg-gradient">
+  
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">At The Moment...</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="nav nav-tabs justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Cold</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Hot</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="http://127.0.0.1:5500/Website-Week-3/website.html">Home Sweet Home</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Mild</a>
+              <div class="dropdown-menu"></div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
+    <hr>
+    
+
+    
+      <div class="container-lg text-center bg-secondary"> <!-- This will be the start of the grid system.-->
+        
+        <div class="row">
+            <div class="col-lg-1 text-white">One Piece</div>
+            <div class="col-lg-4"><img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTQ4aXR6cmN6bHp0ZnBrcTZmaTZrOWdnbHo0dDltOHVoa2wxbGFzNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/D0jGorbyCnZyE/200.webp" alt="One Piece"></div>
+        
+            <div class="col-lg-1 text-white">Mashle: Magic And Muscles</div>
+            <div class="col-lg-1"><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJqN2htZ3BmZzY2YzcwM2Zrd3B4eDFmdHRkeWZyZmhwaDN0MWkyOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SABbfJeUfazs5emwDn/200.webp" alt="Mashle: Magic And Muscles"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1 text-white">Solo Leveling</div>
+            <div class="col-lg-4 "><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmI1YWg4YXJ1c2t6d3pqMGs0NzQ3dzBteWthMWJka3BhMTFsZzA5biZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ySvhFxq6Z4LrbqaikJ/200.webp" alt="Solo Leveling"></div>
+        
+            <div class="col-lg-1 text-white">Law & Order: SVU</div>
+            <div class="col-lg-1"><img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2g2MWNycnpucjZ4ZzQ1YTNldGJ1cXp5dnk5OHhqbzRvZjZybmFqbSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/BnoHcNRFb9Vm65w1Ne/giphy.webp" alt="Special Victims Unit"></div>
+        </div>
+
+<hr>
+
+<form>
+    <div class="form-group row justify-content-center gx-5">
+        <div class="col-lg-6">
+            <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+        </div>
+    
+    
+            <div class="col-lg-6">
+                <label for="exampleInputPassword1" class="form-label text-white">Password</label>
+                 <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+    
+         <div class="form-check col-lg-3">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-white" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary text-white">Submit</button>
+    </div>
+</form>
+
+      
+
+
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!--Elements should stack vertically when the window is small--> 
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
